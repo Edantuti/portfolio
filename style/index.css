@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+header{
+    padding:0.5rem;
+    font-weight: 300;
+}
+
+h3{
+    padding: 5px;
+}
+
+#about{
+    margin:20px;
+    font-size:x-large;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-weight:200;
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    color: blue;
+}
+
+.container{
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color:rgb(27, 27, 27);
+    transition-duration: 0.2s;
+}
+
+.container:hover{
+    width: 45%;
+    padding: 5px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.python{
+    width: 40%;
+    background-color: green;
+}
+
+.java{
+    width:50%;
+    background-color: green;
+}
+
