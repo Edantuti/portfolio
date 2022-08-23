@@ -128,7 +128,7 @@ a:hover{
     padding: 5px;
     color: white;    
     height: 25vh;
-    width:30%;
+    width:30rem;
     margin-bottom: 4px;
     border: none;
     background-color:rgb(27, 27, 27);
@@ -154,4 +154,26 @@ a:hover{
 #submit:hover{
     margin-bottom: -2px;
     border-bottom: 2px solid green;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    #nav{
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    #msg{
+        width: 300px;
+    }
+
+    #about{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #link{
+        margin-top: 100px;
+    }
 }

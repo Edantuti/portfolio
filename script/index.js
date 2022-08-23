@@ -5,13 +5,13 @@ import { getDatabase, ref, set} from "https://www.gstatic.com/firebasejs/9.9.3/f
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyBXx-X-2yZlL_HoshihZLye2MsTyT9S95A",
-    authDomain: "contact-609d7.firebaseapp.com",
-    databaseURL: "https://contact-609d7-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "contact-609d7",
-    storageBucket: "contact-609d7.appspot.com",
-    messagingSenderId: "762620093090",
-    appId: "1:762620093090:web:46ac85db0c95d1edd7adfb"
+    apiKey: process.env.APIKEY,
+    authDomain:process.env.AUTHDOMAIN,
+    databaseURL: process.env.DATABASE,
+    projectId: process.env.PROJECTID,
+    storageBucket: process.env.STORAGEBUCKET,
+    messagingSenderId: process.env.MESSAGINGID,
+    appId:process.env.APPID
   };;
 
   // Initialize Firebase
