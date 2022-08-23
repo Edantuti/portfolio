@@ -124,11 +124,12 @@ a:hover{
     margin-bottom: 10px;
 }
 
-#msg{
+#message{
     padding: 5px;
     color: white;    
     height: 25vh;
     width:30rem;
+    margin-top:4px;
     margin-bottom: 4px;
     border: none;
     background-color:rgb(27, 27, 27);
@@ -137,7 +138,7 @@ a:hover{
     transition-duration: 0.15s;
 }
 
-#msg:hover, #msg:focus{
+#message:hover, #message:focus{
     margin-bottom: 2px;
     border-bottom: 2px solid green;
 }
@@ -165,7 +166,7 @@ a:hover{
         margin-right: auto;
     }
 
-    #msg{
+    #message{
         width: 300px;
     }
 
