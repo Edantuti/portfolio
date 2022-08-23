@@ -1,4 +1,6 @@
 body{
+    padding:0;
+    margin:0;
     display: flex;
     flex-direction: column;
     text-align:center;
@@ -9,17 +11,42 @@ body{
 }
 
 header{
-    padding:0.5rem;
     font-weight: 300;
+    display: flex;
 }
 
-h3{
+h1{
+    padding: 0px 25px;
+}
+
+#nav{
+    padding: 7px;
+    display: flex;
+    list-style: none;
+    margin-left:auto;
+    margin-right:5%;
+}
+
+li{
+    padding: 10px;
+}
+
+#heading{
     padding: 5px;
 }
 
+
 #about{
-    margin:20px;
-    font-size:x-large;
+    margin:10rem auto;
+    font-size:x-large;   
+}
+
+#link{
+    margin-top: 15rem;
+}
+
+#skill{
+    margin-bottom: 5rem;
 }
 
 a{
@@ -40,15 +67,8 @@ a:hover{
     margin-right: auto;
     width: 40%;
     background-color:rgb(27, 27, 27);
-    transition-duration: 0.2s;
 }
 
-.container:hover{
-    width: 45%;
-    padding: 5px;
-    margin-top:0;
-    margin-bottom: 0;
-}
 
 .python{
     width: 40%;
@@ -60,3 +80,78 @@ a:hover{
     background-color: green;
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between;
+    padding: 10px;
+}
+
+#name, #email{
+    padding: 10px 20px;
+    margin: 10px;
+    border:none;
+    
+    background-color:rgb(27, 27, 27);
+    color: white;
+    outline:none;
+    transition-duration: 0.15s;
+}
+
+#email:hover{
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-bottom: 2px green solid;
+}
+#name:hover{
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-bottom: 2px green solid;
+}
+
+#email:focus{
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-bottom: 2px green solid;
+}
+#name:focus{
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-bottom: 2px green solid;
+}
+
+#fields{
+    margin-bottom: 10px;
+}
+
+#msg{
+    padding: 5px;
+    color: white;    
+    height: 25vh;
+    width:30%;
+    margin-bottom: 4px;
+    border: none;
+    background-color:rgb(27, 27, 27);
+    resize: none;
+    outline: none;
+    transition-duration: 0.15s;
+}
+
+#msg:hover, #msg:focus{
+    margin-bottom: 2px;
+    border-bottom: 2px solid green;
+}
+
+
+#submit{
+    color: #b8b8b8;
+    background-color:rgb(27, 27, 27);
+    padding: 10px 20px;
+    border: none;
+    transition-duration: 0.15s;
+}
+
+#submit:hover{
+    margin-bottom: -2px;
+    border-bottom: 2px solid green;
+}
