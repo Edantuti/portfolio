@@ -66,7 +66,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    background-color:rgb(27, 27, 27);
+    background-color:#010918;
 }
 
 
@@ -92,7 +92,7 @@ a:hover{
     margin: 10px;
     border:none;
     
-    background-color:rgb(27, 27, 27);
+    background-color:#010918;
     color: white;
     outline:none;
     transition-duration: 0.15s;
@@ -100,23 +100,23 @@ a:hover{
 
 #email:hover{
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color:#010918;
     border-bottom: 2px green solid;
 }
 #name:hover{
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color:#010918;
     border-bottom: 2px green solid;
 }
 
 #email:focus{
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color: #010918;
     border-bottom: 2px green solid;
 }
 #name:focus{
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color: #010918;
     border-bottom: 2px green solid;
 }
 
@@ -132,7 +132,7 @@ a:hover{
     margin-top:4px;
     margin-bottom: 4px;
     border: none;
-    background-color:rgb(27, 27, 27);
+    background-color:#010918;
     resize: none;
     outline: none;
     transition-duration: 0.15s;
