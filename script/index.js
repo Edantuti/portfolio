@@ -31,9 +31,14 @@ import { getDatabase, ref, set} from "https://www.gstatic.com/firebasejs/9.9.3/f
 
   function submitForm(event){
     event.preventDefault();
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-    document.getElementById("done").innerText = "Done!"
-    sendMessage(name, email,message)
+    if(name !== "" && email !== ""){
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        document.getElementById("done").innerText = "Done!"
+        sendMessage(name, email,message)
+    }else{
+        document.getElementById("done").innerText = "Enter Your name and Email before sending!"
+    }
+    
   }
