@@ -1,0 +1,28 @@
+.progress{
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 150px;
+	
+}
+
+.percent{
+	fill: white;
+}
+
+.track, .indicator{
+	cx: 75px;
+	cy: 75px;
+	r: 57px;
+	fill: transparent;
+	stroke-width: 10px;
+}
+
+.track{
+	stroke: #00002F;
+}
+
+.indicator{
+	stroke: #00007F;
+}
+
