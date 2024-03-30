@@ -13,12 +13,7 @@ fontSize: {
   '5xl': '4.210rem',
 },
 fontFamily: {
-  heading: 'Radio Canada',
-  body: 'Radio Canada',
-},
-fontWeight: {
-  normal: '400',
-  bold: '700',
+  geist:"Geist"
 },
     },
   },
