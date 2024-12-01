@@ -1,6 +1,7 @@
-import { List, SquareArrowOutUpRight } from "lucide-react";
+import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 import { Section } from "./components/section";
+import { List } from "./components/list";
 
 export default function Home() {
   return (

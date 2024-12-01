@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export function Section({
   children,
-  className,
+  className = "",
 }: {
   children: ReactNode;
   className?: string;
