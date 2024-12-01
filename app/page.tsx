@@ -100,7 +100,7 @@ export default function Home() {
         </List>
       </Section>
       <footer className="flex items-center justify-between border-t border-dashed border-gray-400 p-2 mt-auto">
-        <h5 className="font-mono text-xs text-gray-600">Edan Solomon Tuti</h5>
+        <h4 className="font-mono text-xs text-gray-600">Edan Solomon Tuti</h4>
         <div className="font-mono text-xs text-gray-600 flex gap-4">
           <a
             href="https://x.com/edantuti11"
