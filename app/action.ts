@@ -30,6 +30,7 @@ export async function nowPlaying(token: string) {
       headers: {
         Authorization: `Bearer ${token}`,
       },
+      cache: "no-store",
     },
   ).then((res) => {
     if (res.status === 200) return res.json();
