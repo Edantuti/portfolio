@@ -2,30 +2,36 @@ import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 import { Section } from "./components/section";
 import { List } from "./components/list";
+import { NowPlaying } from "./components/now-playing";
+import { authorize } from "./action";
 
-export default function Home() {
+export default async function Home() {
+  const { access_token } = await authorize();
   return (
-    <main className="min-h-screen md:max-w-3xl mx-auto min-w-96 flex flex-1 flex-col border-x md:px-10 px-4 border-dashed border-gray-500 gap-10">
+    <main className="min-h-screen md:max-w-3xl mx-auto min-w-96 flex flex-1 flex-col border-x md:px-10 px-4 border-dashed border-gray-500 gap-10 bg-gray-100">
       <Section className="mt-12">
-        <h1 className="text-xl">Edan Solomon Tuti</h1>
+        <h1 className="md:text-2xl text-xl font-semibold">Edan Solomon Tuti</h1>
         <p>
           An undergrad student, pursing Bachelor of Technology at National
           Institute of Technology, Agartala. Loves exploring new tech.
         </p>
         <p>Sports: Chess</p>
         <p>Other Activities: Watching Anime, Exploration</p>
+        <NowPlaying token={access_token} />
       </Section>
       <Section>
-        <h2 className="text-lg underline">Experience</h2>
+        <h2 className="text-lg underline font-medium">Experience</h2>
         <List>
           <li className="space-y-2">No Experience Yet..., Please Hire me</li>
         </List>
       </Section>
       <Section>
-        <h2 className="text-lg underline">Achievements</h2>
+        <h2 className="text-lg underline font-medium">Achievements</h2>
         <List>
           <li className="space-y-2">
-            <h3 className="text-base">2nd Runner-Up: Ethos Hackathon</h3>
+            <h3 className="text-base font-medium">
+              2nd Runner-Up: Ethos Hackathon
+            </h3>
             <div>
               <h4 className="text-sm">Description:</h4>
               <p className="text-xs">
@@ -48,11 +54,11 @@ export default function Home() {
               target="_blank"
               className="flex items-center space-x-2"
             >
-              <h3 className="text-base">
+              <h3 className="text-base font-medium">
                 Vihlog - Self Hosting Blogging Website
               </h3>
               <span>
-                <SquareArrowOutUpRight className="size-4" />
+                <SquareArrowOutUpRight className="size-3" />
               </span>
               <span className="border border-dashed rounded-full text-xs px-4 py-1 text-gray-500">
                 Building
@@ -66,11 +72,11 @@ export default function Home() {
               target="_blank"
               className="flex items-center space-x-2"
             >
-              <h3 className="text-base">
+              <h3 className="text-base font-medium">
                 BloomChat - End to End Encrypted Chatting Application
               </h3>
               <span>
-                <SquareArrowOutUpRight className="size-4" />
+                <SquareArrowOutUpRight className="size-3" />
               </span>
               <span className="border border-dashed rounded-full text-xs px-4 py-1 text-gray-500">
                 Building
@@ -84,9 +90,11 @@ export default function Home() {
               target="_blank"
               className="flex items-center space-x-2"
             >
-              <h3 className="text-base">Hikmat - Ecommerce Website</h3>
+              <h3 className="text-base font-medium">
+                Hikmat - Ecommerce Website
+              </h3>
               <span>
-                <SquareArrowOutUpRight className="size-4" />
+                <SquareArrowOutUpRight className="size-3" />
               </span>
               <span className="border border-dashed rounded-full text-xs px-4 py-1 text-gray-500">
                 Archived
@@ -115,6 +123,13 @@ export default function Home() {
             title="LinkedIn Account"
           >
             LinkedIn
+          </a>
+          <a
+            href="https://github.com/Edantuti"
+            target="_blank"
+            title="Github Account"
+          >
+            Github
           </a>
         </div>
       </footer>
