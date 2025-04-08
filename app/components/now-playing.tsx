@@ -28,7 +28,7 @@ export async function NowPlaying({ token }: { token: string }) {
         {track.is_playing
           ? `Now Playing: ${track.name} ${artist_names.length > 0 && "|"}
         ${artist_names}`
-          : track.name}
+          : "No songs are currently playing."}
       </p>
     </div>
   );

@@ -40,7 +40,7 @@ export default async function Home() {
               </p>
             </div>
             <p>
-              Project: <Link href="#project2">BloomChat</Link>
+              Project: <Link href="#project2">BloomChats</Link>
             </p>
           </li>
         </List>
@@ -68,12 +68,12 @@ export default async function Home() {
           </li>
           <li className=" space-y-2" id="project2">
             <a
-              href="https://github.com/Edantuti/bloomchat"
+              href="https://github.com/Edantuti/bloomchats"
               target="_blank"
               className="flex items-center space-x-2"
             >
               <h3 className="text-base font-medium">
-                BloomChat - End to End Encrypted Chatting Application
+                BloomChats - End to End Encrypted Chatting Application
               </h3>
               <span>
                 <SquareArrowOutUpRight className="size-3" />
