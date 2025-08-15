@@ -2,11 +2,11 @@ import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 import { Section } from "./components/section";
 import { List } from "./components/list";
-import { NowPlaying } from "./components/now-playing";
-import { authorize } from "./action";
+import { Badge } from "./components/badge";
+import { Heading } from "./components/heading";
+import { Paragraph } from "./components/paragraph";
 
 export default async function Home() {
-  const { access_token } = await authorize();
   return (
     <main className="min-h-screen md:max-w-3xl mx-auto min-w-96 flex flex-1 flex-col border-x md:px-10 px-4 border-dashed border-gray-500 gap-10 bg-gray-100">
       <Section className="mt-12">
@@ -17,27 +17,45 @@ export default async function Home() {
         </p>
         <p>Sports: Chess</p>
         <p>Other Activities: Watching Anime, Exploration</p>
-        <NowPlaying token={access_token} />
       </Section>
       <Section>
         <h2 className="text-lg underline font-medium">Experience</h2>
         <List>
-          <li className="space-y-2">No Experience Yet..., Please Hire me</li>
+          <li className="space-y-2">
+            <h3 className="text-base font-medium">
+              Full Stack Engineer Intern, Kickoff Labs
+              <Badge>
+                Dec 2024 - Jun 2025 
+              </Badge>
+            </h3>
+            <div className="space-y-1">
+              <h4 className="text-sm">Work Details:</h4>
+              <Paragraph>
+                Integrated Salesforce into the system, for retrieving customer details. 
+              </Paragraph>
+              <Paragraph>
+                Optimized SQL queries by implementing indexes and monitored performance using sentry and silk. 
+              </Paragraph>
+              <Paragraph>
+                Added Unit Tests on Frontend using React Testing Library and Vitest, and Backend using pytest.
+              </Paragraph>
+            </div>
+          </li>
         </List>
       </Section>
       <Section>
         <h2 className="text-lg underline font-medium">Achievements</h2>
         <List>
           <li className="space-y-2">
-            <h3 className="text-base font-medium">
+            <Heading> 
               2nd Runner-Up: Ethos Hackathon
-            </h3>
+            </Heading>
             <div>
               <h4 className="text-sm">Description:</h4>
-              <p className="text-xs">
+              <Paragraph>
                 Ethos, hackathon conducted by IIT-Guwahati, participated in
                 Software Development Track.
-              </p>
+              </Paragraph>
             </div>
             <p>
               Project: <Link href="#project2">BloomChats</Link>
@@ -54,15 +72,13 @@ export default async function Home() {
               target="_blank"
               className="flex items-center space-x-2"
             >
-              <h3 className="text-base font-medium">
-                Vihlog - Self Hosting Blogging Website
-              </h3>
-              <span>
+              <Heading> 
+                Indielog - Self Hosting Blogging Website
+              </Heading>
                 <SquareArrowOutUpRight className="size-3" />
-              </span>
-              <span className="border border-dashed rounded-full text-xs px-4 py-1 text-gray-500">
+             <Badge> 
                 Building
-              </span>
+              </Badge>
             </a>
             <p>Tech-Stack: Supabase, NextJS, TailWindCSS, PostgreSQL</p>
           </li>
@@ -72,15 +88,13 @@ export default async function Home() {
               target="_blank"
               className="flex items-center space-x-2"
             >
-              <h3 className="text-base font-medium">
+              <Heading> 
                 BloomChats - End to End Encrypted Chatting Application
-              </h3>
-              <span>
+              </Heading>
                 <SquareArrowOutUpRight className="size-3" />
-              </span>
-              <span className="border border-dashed rounded-full text-xs px-4 py-1 text-gray-500">
+             <Badge> 
                 Building
-              </span>
+              </Badge>
             </a>
             <p>Tech-Stack: Convex, React-Native, TweetNacl.js</p>
           </li>
@@ -90,15 +104,13 @@ export default async function Home() {
               target="_blank"
               className="flex items-center space-x-2"
             >
-              <h3 className="text-base font-medium">
+              <Heading> 
                 Hikmat - Ecommerce Website
-              </h3>
-              <span>
+              </Heading>
                 <SquareArrowOutUpRight className="size-3" />
-              </span>
-              <span className="border border-dashed rounded-full text-xs px-4 py-1 text-gray-500">
+             <Badge> 
                 Archived
-              </span>
+              </Badge>
             </a>
             <p>
               Tech-Stack: React, TailWindCSS, Victory, Express, PostgreSQL,
@@ -107,9 +119,9 @@ export default async function Home() {
           </li>
         </List>
       </Section>
-      <footer className="flex items-center justify-between border-t border-dashed border-gray-400 p-2 mt-auto">
-        <h4 className="font-mono text-xs text-gray-600">Edan Solomon Tuti</h4>
-        <div className="font-mono text-xs text-gray-600 flex gap-4">
+      <footer className="font-mono text-xs text-gray-600 flex items-center justify-between border-t border-dashed border-gray-400 p-2 mt-auto">
+        <h4 className="">Edan Solomon Tuti</h4>
+        <div className="flex gap-4">
           <a
             href="https://x.com/edantuti11"
             target="_blank"
