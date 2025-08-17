@@ -25,7 +25,7 @@ export default async function Home() {
             <h3 className="text-base font-medium">
               Full Stack Engineer Intern, Kickoff Labs
               <Badge>
-                Dec 2024 - Jun 2025 
+                Dec 2024 - Feb 2025 
               </Badge>
             </h3>
             <div className="space-y-1">
