@@ -23,21 +23,21 @@ export default async function Home() {
         <List>
           <li className="space-y-2">
             <h3 className="text-base font-medium">
-              Full Stack Engineer Intern, Kickoff Labs
+              Full Stack Engineer Intern · Kickoff Labs
               <Badge>
-                Dec 2024 - Feb 2025 
+                Internship · Dec 2024 - Feb 2025
               </Badge>
             </h3>
             <div className="space-y-1">
               <h4 className="text-sm">Work Details:</h4>
               <Paragraph>
-                Integrated Salesforce into the system, for retrieving customer details. 
+                Integrated Salesforce into the system to retrieve customer data more reliably.
               </Paragraph>
               <Paragraph>
-                Optimized SQL queries by implementing indexes and monitored performance using sentry and silk. 
+                Optimized SQL queries by adding indexes and monitored performance using Sentry and Silk.
               </Paragraph>
               <Paragraph>
-                Added Unit Tests on Frontend using React Testing Library and Vitest, and Backend using pytest.
+                Added frontend unit tests with React Testing Library and Vitest, and backend tests with pytest.
               </Paragraph>
             </div>
           </li>
